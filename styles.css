@@ -46,6 +46,39 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; color: #2c3e50; }
     margin: 0 auto 3rem auto;
 }
 
+/* CTA Buttons */
+.cta-button {
+    display: inline-block;
+    background-color: #7E57C2; /* Purple Accent */
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.cta-button:hover {
+    background-color: #6a44a7;
+    transform: translateY(-3px);
+}
+.cta-button-secondary {
+    display: inline-block;
+    background-color: #fff;
+    color: #3F51B5;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid #ddd;
+}
+.cta-button-secondary:hover {
+    background-color: #3F51B5;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+
 /* Header */
 .page-header {
     background: linear-gradient(135deg, #3F51B5 0%, #7E57C2 100%);
@@ -68,6 +101,15 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; color: #2c3e50; }
     max-width: 700px;
     margin: 0 auto;
 }
+.page-header .cta-button {
+    margin-top: 2rem;
+    background-color: #fff;
+    color: #3F51B5;
+}
+.page-header .cta-button:hover {
+    background-color: #F0F2F9;
+}
+
 
 /* Card Styles */
 .card {
@@ -149,6 +191,24 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; color: #2c3e50; }
     line-height: 1.5;
 }
 
+/* CTA Section */
+.cta-section {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    margin: 2rem 0;
+}
+.cta-section .section-title {
+    color: #3F51B5;
+}
+.cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
 
 /* Team Section */
 .team-card {
@@ -211,4 +271,3 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; color: #2c3e50; }
     .page-header h1 { font-size: 2.5rem; }
     .section-title { font-size: 1.8rem; }
 }
-
